@@ -13,8 +13,8 @@ public class SolvingEquations {
                 System.out.print("Input a , b : ");
                 a = sc.nextDouble();
                 b = sc.nextDouble();
-                if (b == 0){
-                    if (a == 0) System.out.println("Infinite Solution!");
+                if (a == 0){
+                    if (b == 0) System.out.println("Infinite Solution!");
                     else System.out.println("No Solution!");
                 }
                 else {
@@ -34,7 +34,12 @@ public class SolvingEquations {
                 double Det = Math.abs(a11 * a22 - a12 * a21);
                 double Dx = Math.abs(b1 * a22 - b2 * a12);
                 double Dy = Math.abs(b1 * a21 - b2 * a11);
-                if (Det == 0) System.out.println("There are infinite solutions or No solution");
+                if (Det == 0) {
+                    if ( a11 == 0 && a12 == 0 && b1 != 0) System.out.println("No solution !");
+                    else if ( a21 == 0 && a22 == 0 && b2 != 0) System.out.println("No solution !");
+                    else if(Dx == 0 && Dy == 0) System.out.println("Infinite solution");
+                    else System.out.println("No solution !");
+                }
                 else {
                     double x = Dx / Det;
                     double y = Dy / Det;
