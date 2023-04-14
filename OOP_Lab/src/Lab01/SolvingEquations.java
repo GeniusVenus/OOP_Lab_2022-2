@@ -31,9 +31,9 @@ public class SolvingEquations {
                 a21 = sc.nextDouble();
                 a22 = sc.nextDouble();
                 b2 = sc.nextDouble();
-                double Det = Math.abs(a11 * a22 - a12 * a21);
-                double Dx = Math.abs(b1 * a22 - b2 * a12);
-                double Dy = Math.abs(b1 * a21 - b2 * a11);
+                double Det = (a11 * a22 - a12 * a21);
+                double Dx = (b1 * a22 - b2 * a12);
+                double Dy = (b2 * a11 - b1 * a21);
                 if (Det == 0) {
                     if ( a11 == 0 && a12 == 0 && b1 != 0) System.out.println("No solution !");
                     else if ( a21 == 0 && a22 == 0 && b2 != 0) System.out.println("No solution !");
