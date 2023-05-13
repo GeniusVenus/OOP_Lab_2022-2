@@ -1,4 +1,4 @@
-package DayInMonthYear;
+package Lab01.DayInMonthYear;
 
 import java.util.Scanner;
 

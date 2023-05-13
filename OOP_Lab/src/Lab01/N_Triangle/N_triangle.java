@@ -1,4 +1,4 @@
-package N_Triangle;
+package Lab01.N_Triangle;
 
 import java.util.Scanner;
 
