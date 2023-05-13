@@ -6,20 +6,14 @@ import java.nio.file.Paths;
 public class NoGarbage {
     public static void main(String[] args) throws IOException {
         String filename = "test.exe";
-        byte[] inputBytes = {0};
-        long startTime, endTime;
-        try {
-            inputBytes = Files.readAllBytes(Paths.get(filename));
-        } catch (IOException e) {
-            /* TODO Auto-generated catch block */
-            e.printStackTrace();
-        }
+        byte[] inputBytes = { 0 };
+        long startTime , endTime ;
+        inputBytes = Files.readAllBytes(Paths.get(filename));
         startTime = System.currentTimeMillis();
         StringBuilder outputStringBuilder = new StringBuilder();
-        for (byte b : inputBytes) {
-            outputStringBuilder.append((char) b);
-        }
+        for(byte b : inputBytes)
+            outputStringBuilder.append((char)b);
         endTime = System.currentTimeMillis();
-        System.out.println(endTime - startTime); // 1
+        System.out.println(endTime - startTime);
     }
 }
