@@ -1,5 +1,5 @@
 package Lab04.AimsProject.src.hust.soict.globalict.aims.store;
-import Lab03.AimsProject.src.hust.soict.globalict.aims.disc.DigitalVideoDisc;
+import Lab04.AimsProject.src.hust.soict.globalict.aims.media.DigitalVideoDisc;
 import Lab04.AimsProject.src.hust.soict.globalict.aims.media.Media;
 
 import java.util.*;
