@@ -1,6 +1,6 @@
 package Lab04.AimsProject.src.hust.soict.globalict.aims.media;
 
-abstract public class Track implements Playable{
+public class Track implements Playable{
     private String title;
     private int length;
 
